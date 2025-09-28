@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.BusinessLogic", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.BusinessLogic\NotSoCoolShop.BusinessLogic.csproj", "{718BD394-7D25-6B99-5322-A85D8DF73CDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.BusinessLogic", "NotSoCoolShop.BusinessLogic\NotSoCoolShop.BusinessLogic.csproj", "{C0221614-481E-A288-05A5-3AADEA003B92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.DataAccessLayer", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.DataAccessLayer\NotSoCoolShop.DataAccessLayer.csproj", "{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.DataAccessLayer", "NotSoCoolShop.DataAccessLayer\NotSoCoolShop.DataAccessLayer.csproj", "{45C3920C-C035-776E-1EA3-9BE5B0CCEB3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.Model", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.Model\NotSoCoolShop.Model.csproj", "{2C689855-DE4C-B986-A4F6-496A7E644283}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.Model", "NotSoCoolShop.Model\NotSoCoolShop.Model.csproj", "{7C52E1DE-3ED1-75AB-FCF8-D6CABBFE34C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.Userinterface", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.Userinterface\NotSoCoolShop.Userinterface.csproj", "{29CD99AE-C6FC-FED0-F69B-14687787912C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.Userinterface", "NotSoCoolShop.Userinterface\NotSoCoolShop.Userinterface.csproj", "{BED229A0-14B6-A976-A9AE-FB32F6934B4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C689855-DE4C-B986-A4F6-496A7E644283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C689855-DE4C-B986-A4F6-496A7E644283}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C689855-DE4C-B986-A4F6-496A7E644283}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C689855-DE4C-B986-A4F6-496A7E644283}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0221614-481E-A288-05A5-3AADEA003B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0221614-481E-A288-05A5-3AADEA003B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0221614-481E-A288-05A5-3AADEA003B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0221614-481E-A288-05A5-3AADEA003B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C3920C-C035-776E-1EA3-9BE5B0CCEB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C3920C-C035-776E-1EA3-9BE5B0CCEB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C3920C-C035-776E-1EA3-9BE5B0CCEB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C3920C-C035-776E-1EA3-9BE5B0CCEB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C52E1DE-3ED1-75AB-FCF8-D6CABBFE34C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C52E1DE-3ED1-75AB-FCF8-D6CABBFE34C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C52E1DE-3ED1-75AB-FCF8-D6CABBFE34C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C52E1DE-3ED1-75AB-FCF8-D6CABBFE34C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED229A0-14B6-A976-A9AE-FB32F6934B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED229A0-14B6-A976-A9AE-FB32F6934B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED229A0-14B6-A976-A9AE-FB32F6934B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED229A0-14B6-A976-A9AE-FB32F6934B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
