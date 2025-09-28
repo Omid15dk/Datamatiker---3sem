@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.BusinessLogic", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.BusinessLogic\NotSoCoolShop.BusinessLogic.csproj", "{718BD394-7D25-6B99-5322-A85D8DF73CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.DataAccessLayer", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.DataAccessLayer\NotSoCoolShop.DataAccessLayer.csproj", "{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.Model", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.Model\NotSoCoolShop.Model.csproj", "{2C689855-DE4C-B986-A4F6-496A7E644283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotSoCoolShop.Userinterface", "..\..\..\..\OneDrive - Professionshøjskolen UCN\UNI\3. semester\Programmering\Sessionsmateriale\Session06\NotSoCoolShopBase\NotSoCoolShop.Userinterface\NotSoCoolShop.Userinterface.csproj", "{29CD99AE-C6FC-FED0-F69B-14687787912C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718BD394-7D25-6B99-5322-A85D8DF73CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250472F4-9E95-F0AA-3EA0-56840CEA3BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C689855-DE4C-B986-A4F6-496A7E644283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C689855-DE4C-B986-A4F6-496A7E644283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C689855-DE4C-B986-A4F6-496A7E644283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C689855-DE4C-B986-A4F6-496A7E644283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29CD99AE-C6FC-FED0-F69B-14687787912C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA23C05F-0342-4A50-A382-F25D94E51D36}
+	EndGlobalSection
+EndGlobal
