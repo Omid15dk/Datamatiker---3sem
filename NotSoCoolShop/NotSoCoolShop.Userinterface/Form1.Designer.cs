@@ -23,118 +23,147 @@ namespace NotSoCoolShop.Userinterface {
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.listBoxProducts = new System.Windows.Forms.ListBox();
-            this.buttonInsert = new System.Windows.Forms.Button();
-            this.buttonGetAll = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+        private void InitializeComponent()
+        {
+            txtTitle = new TextBox();
+            txtPrice = new TextBox();
+            lblTitle = new Label();
+            lblPrice = new Label();
+            lblProducts = new Label();
+            listBoxProducts = new ListBox();
+            buttonInsert = new Button();
+            buttonGetAll = new Button();
+            txtQuantity = new TextBox();
+            lblQuantity = new Label();
+            SuspendLayout();
             // 
-            // textBoxTitle
+            // txtTitle
             // 
-            this.textBoxTitle.Location = new System.Drawing.Point(60, 53);
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(125, 27);
-            this.textBoxTitle.TabIndex = 0;
+            txtTitle.Location = new Point(52, 40);
+            txtTitle.Margin = new Padding(3, 2, 3, 2);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(110, 23);
+            txtTitle.TabIndex = 0;
             // 
-            // textBoxPrice
+            // txtPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(60, 131);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(125, 27);
-            this.textBoxPrice.TabIndex = 1;
+            txtPrice.Location = new Point(52, 98);
+            txtPrice.Margin = new Padding(3, 2, 3, 2);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(110, 23);
+            txtPrice.TabIndex = 1;
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Title";
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(52, 22);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(29, 15);
+            lblTitle.TabIndex = 2;
+            lblTitle.Text = "Title";
             // 
-            // label2
+            // lblPrice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Price";
+            lblPrice.AutoSize = true;
+            lblPrice.Location = new Point(52, 81);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(33, 15);
+            lblPrice.TabIndex = 3;
+            lblPrice.Text = "Price";
             // 
-            // label3
+            // lblProducts
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Products";
+            lblProducts.AutoSize = true;
+            lblProducts.Location = new Point(278, 22);
+            lblProducts.Name = "lblProducts";
+            lblProducts.Size = new Size(54, 15);
+            lblProducts.TabIndex = 4;
+            lblProducts.Text = "Products";
             // 
             // listBoxProducts
             // 
-            this.listBoxProducts.FormattingEnabled = true;
-            this.listBoxProducts.ItemHeight = 20;
-            this.listBoxProducts.Location = new System.Drawing.Point(318, 54);
-            this.listBoxProducts.Name = "listBoxProducts";
-            this.listBoxProducts.Size = new System.Drawing.Size(299, 144);
-            this.listBoxProducts.TabIndex = 5;
-            this.listBoxProducts.SelectedIndexChanged += new System.EventHandler(this.ListBoxProducts_SelectedIndexChanged);
+            listBoxProducts.FormattingEnabled = true;
+            listBoxProducts.ItemHeight = 15;
+            listBoxProducts.Location = new Point(278, 40);
+            listBoxProducts.Margin = new Padding(3, 2, 3, 2);
+            listBoxProducts.Name = "listBoxProducts";
+            listBoxProducts.Size = new Size(262, 109);
+            listBoxProducts.TabIndex = 5;
+            listBoxProducts.SelectedIndexChanged += ListBoxProducts_SelectedIndexChanged;
             // 
             // buttonInsert
             // 
-            this.buttonInsert.Location = new System.Drawing.Point(60, 223);
-            this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(125, 29);
-            this.buttonInsert.TabIndex = 6;
-            this.buttonInsert.Text = "Insert product";
-            this.buttonInsert.UseVisualStyleBackColor = true;
-            this.buttonInsert.Click += new System.EventHandler(this.ButtonInsert_Click);
+            buttonInsert.Location = new Point(53, 189);
+            buttonInsert.Margin = new Padding(3, 2, 3, 2);
+            buttonInsert.Name = "buttonInsert";
+            buttonInsert.Size = new Size(109, 22);
+            buttonInsert.TabIndex = 6;
+            buttonInsert.Text = "Insert product";
+            buttonInsert.UseVisualStyleBackColor = true;
+            buttonInsert.Click += ButtonInsert_Click;
             // 
             // buttonGetAll
             // 
-            this.buttonGetAll.Location = new System.Drawing.Point(318, 223);
-            this.buttonGetAll.Name = "buttonGetAll";
-            this.buttonGetAll.Size = new System.Drawing.Size(136, 29);
-            this.buttonGetAll.TabIndex = 7;
-            this.buttonGetAll.Text = "Get all products";
-            this.buttonGetAll.UseVisualStyleBackColor = true;
-            this.buttonGetAll.Click += new System.EventHandler(this.ButtonGetAll_Click);
+            buttonGetAll.Location = new Point(278, 167);
+            buttonGetAll.Margin = new Padding(3, 2, 3, 2);
+            buttonGetAll.Name = "buttonGetAll";
+            buttonGetAll.Size = new Size(119, 22);
+            buttonGetAll.TabIndex = 7;
+            buttonGetAll.Text = "Get all products";
+            buttonGetAll.UseVisualStyleBackColor = true;
+            buttonGetAll.Click += ButtonGetAll_Click;
+            // 
+            // txtQuantity
+            // 
+            txtQuantity.Location = new Point(52, 147);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(110, 23);
+            txtQuantity.TabIndex = 8;
+            // 
+            // lblQuantity
+            // 
+            lblQuantity.AutoSize = true;
+            lblQuantity.Location = new Point(52, 129);
+            lblQuantity.Name = "lblQuantity";
+            lblQuantity.Size = new Size(49, 15);
+            lblQuantity.TabIndex = 9;
+            lblQuantity.Text = "Quanity";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 429);
-            this.Controls.Add(this.buttonGetAll);
-            this.Controls.Add(this.buttonInsert);
-            this.Controls.Add(this.listBoxProducts);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxPrice);
-            this.Controls.Add(this.textBoxTitle);
-            this.Name = "Form1";
-            this.Text = "Database Vertical";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(601, 322);
+            Controls.Add(lblQuantity);
+            Controls.Add(txtQuantity);
+            Controls.Add(buttonGetAll);
+            Controls.Add(buttonInsert);
+            Controls.Add(listBoxProducts);
+            Controls.Add(lblProducts);
+            Controls.Add(lblPrice);
+            Controls.Add(lblTitle);
+            Controls.Add(txtPrice);
+            Controls.Add(txtTitle);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Form1";
+            Text = "Database Vertical";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxTitle;
-        private System.Windows.Forms.TextBox textBoxPrice;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblProducts;
         private System.Windows.Forms.ListBox listBoxProducts;
         private System.Windows.Forms.Button buttonInsert;
         private System.Windows.Forms.Button buttonGetAll;
+        private TextBox txtQuantity;
+        private Label lblQuantity;
     }
 }
 

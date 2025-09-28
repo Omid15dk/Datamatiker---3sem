@@ -17,9 +17,10 @@ namespace NotSoCoolShop.DataAccessLayer {
             using (SqlConnection connection = new SqlConnection(_connectionString)) {
                 connection.Open();
                 using (SqlCommand cmdInsertProd = connection.CreateCommand()) {
-                    cmdInsertProd.CommandText = "INSERT INTO Product(Title, Price) VALUES(@title, @price)";
+                    cmdInsertProd.CommandText = "INSERT INTO Product(Title, Price, QuantityInStock) VALUES(@title, @price, @quantityInStock)";
                     cmdInsertProd.Parameters.AddWithValue("title", prodToInsert.Title);
                     cmdInsertProd.Parameters.AddWithValue("price", prodToInsert.Price);
+                    cmdInsertProd.Parameters.AddWithValue("quantityInStock", prodToInsert.Quantity);
                     cmdInsertProd.ExecuteNonQuery();
                 }
             }
@@ -40,7 +41,7 @@ namespace NotSoCoolShop.DataAccessLayer {
             using (SqlConnection connection = new SqlConnection(_connectionString)) {
                 connection.Open();
                 using (SqlCommand cmd = connection.CreateCommand()) {
-                    cmd.CommandText = "SELECT id, title, price from Product";
+                    cmd.CommandText = "SELECT id, title, price, quantityInStock from Product";
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read()) {
                         tempP = new Product();
@@ -50,6 +51,7 @@ namespace NotSoCoolShop.DataAccessLayer {
                             tempP.Title = reader.GetString(reader.GetOrdinal("Title"));
                         }
                         tempP.Price = reader.GetDecimal(reader.GetOrdinal("Price"));
+                        tempP.Quantity = reader.GetInt32(reader.GetOrdinal("QuantityInStock"));
                         products.Add(tempP);
                     }
                 }

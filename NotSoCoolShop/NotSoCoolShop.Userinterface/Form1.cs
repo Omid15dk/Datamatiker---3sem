@@ -2,49 +2,58 @@
 using NotSoCoolShop.Model;
 
 namespace NotSoCoolShop.Userinterface {
-    public partial class Form1 : Form {
+    public partial class Form1 : Form
+    {
 
         private ProductController _productController;
 
-        public Form1() {
+        public Form1()
+        {
             InitializeComponent();
 
             _productController = new ProductController();
         }
 
-        private void ButtonInsert_Click(object sender, EventArgs e) {
+        private void ButtonInsert_Click(object sender, EventArgs e)
+        {
 
-            string inTitle = this.textBoxTitle.Text;
-            string inPrice = this.textBoxPrice.Text;
+            string inTitle = this.txtTitle.Text;
+            string inPrice = this.txtPrice.Text;
+            string inQuantity = this.txtQuantity.Text;
 
-            if (!String.IsNullOrEmpty(inTitle) && !String.IsNullOrEmpty(inPrice)) {
+            if (!String.IsNullOrEmpty(inTitle) && !String.IsNullOrEmpty(inPrice) && !String.IsNullOrEmpty(inQuantity))
+            {
                 string title = inTitle.Trim();
-                if (Decimal.TryParse(inPrice, out decimal price)) {
-                    Product newProduct = new Product(title, price);
+                if (Decimal.TryParse(inPrice, out decimal price) && int.TryParse(inQuantity, out int quantity))
+                {
+                    Product newProduct = new Product(title, price, quantity);
                     _productController.Create(newProduct);
                     UpdateListBoxProducts();
                 }
             }
         }
 
-        private void ButtonGetAll_Click(object sender, EventArgs e) {
+        private void ButtonGetAll_Click(object sender, EventArgs e)
+        {
             UpdateListBoxProducts();
         }
 
-        private void ListBoxProducts_SelectedIndexChanged(object sender, EventArgs e) {
+        private void ListBoxProducts_SelectedIndexChanged(object sender, EventArgs e)
+        {
             var selProd = listBoxProducts.SelectedItem.ToString();
             MessageBox.Show(selProd);
         }
 
-        private void UpdateListBoxProducts() {
+        private void UpdateListBoxProducts()
+        {
             var allProducts = _productController.GetAll();
             // MessageBox.Show("" + allProducts.Count());
             listBoxProducts.Items.Clear();
-            foreach (Product prod in allProducts) {
+            foreach (Product prod in allProducts)
+            {
                 listBoxProducts.Items.Add(prod);
             }
         }
-
 
     }
 }

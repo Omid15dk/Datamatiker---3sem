@@ -11,17 +11,18 @@ namespace NotSoCoolShop.Model {
         public int Quantity { get; set; }
         public List<OrderLine> OrderLines { get; set; }
 
-        public Product(string title, decimal price) {
+        public Product(string title, decimal price, int quantity) {
             Title = title;
             Price = price;
+            Quantity = quantity;
         }
 
-        public Product(int id, string title, decimal price) : this(title, price) {
+        public Product(int id, string title, decimal price, int quantity) : this(title, price, quantity) {
             Id = id;
         }
 
         public override string ToString() {
-            return $"{Id} {Title} ({Price})";
+            return $"{Id} {Title} ({Price}) {Quantity}";
         }
 
     }
