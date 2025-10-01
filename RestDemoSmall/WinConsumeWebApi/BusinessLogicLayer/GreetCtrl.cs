@@ -3,7 +3,7 @@
 namespace WinConsumeWebApi.BusinessLogicLayer {
     public class GreetCtrl {
 
-        public async Task<string?> GetGreeting(GreetSituation inSit, string? inName, int inTimes) {
+        public async Task<string?> GetGreeting(GreetSituation inSit, string? inName, int inTimes, string? inNickname) {
 
             string? fetchedText = null;
 
@@ -20,7 +20,13 @@ namespace WinConsumeWebApi.BusinessLogicLayer {
                     break;
                 case GreetSituation.NameAndTimes:
                     if (inName != null) {
-                        fetchedText = await hiService.GetGreeting(inName, inTimes);
+                        fetchedText = await hiService.GetGreeting(inName, null, inTimes);
+                    }
+                    break;
+                case GreetSituation.NameAndNickname:
+                    if (inName != null)
+                    {
+                        fetchedText = await hiService.GetGreeting(inName, inNickname);
                     }
                     break;
             }

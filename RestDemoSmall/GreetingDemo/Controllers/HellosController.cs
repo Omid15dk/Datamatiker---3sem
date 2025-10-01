@@ -19,9 +19,16 @@ namespace GreetingDemo.Controllers {
         }
 
         [HttpGet]
-        [Route("{name}/{times}")]
+        [Route("{name}/{times:int}")]
         public ActionResult<string> Get(string name, int times) {
             string returnStr = $"Hello {name} * {times}";
+            return Ok(returnStr);
+        }
+
+        [HttpGet]
+        [Route("{name}/{nickname}")]
+        public ActionResult<string> Get(string name, string nickname) {
+            string returnStr = $"Hello {name} aka {nickname}";
             return Ok(returnStr);
         }
 
