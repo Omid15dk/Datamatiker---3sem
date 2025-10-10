@@ -1,0 +1,36 @@
+@page
+@model MyPhoneGoesPingRazor.Pages.PingDebugModel
+
+<h1>Telegram Ping Debug</h1>
+
+<div>
+    <strong>Bot:</strong>
+    @if (!string.IsNullOrEmpty(Model.BotUsername))
+    {
+        <span>@Model.BotUsername (@Model.BotId)</span>
+    }
+    else
+    {
+        <span>Unknown (call GetMe on page load to populate)</span>
+    }
+</div>
+
+<form method="post">
+    <div>
+        <label asp-for="ChatId">Chat Id (leave empty to use DefaultChatId)</label><br />
+        <input asp-for="ChatId" />
+    </div>
+    <div>
+        <label asp-for="Text">Text (optional)</label><br />
+        <input asp-for="Text" />
+    </div>
+    <button type="submit" asp-page-handler="Send">Send Test Ping</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ResultMessage))
+{
+    <div style="margin-top:1rem; padding:0.5rem; border:1px solid #ccc;">
+        <strong>Result:</strong>
+        <div>@Model.ResultMessage</div>
+    </div>
+}

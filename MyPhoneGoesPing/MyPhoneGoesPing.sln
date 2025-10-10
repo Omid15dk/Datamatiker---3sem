@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhoneGoesPing", "MyPhoneGoesPing\MyPhoneGoesPing.csproj", "{9D5102C0-1FAA-44BA-9C8D-8D3AB7F83527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhoneGoesPingRazor", "MyPhoneGoesPingRazor\MyPhoneGoesPingRazor.csproj", "{CEC71CF9-3032-4407-ACE2-29C24E594D0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9D5102C0-1FAA-44BA-9C8D-8D3AB7F83527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D5102C0-1FAA-44BA-9C8D-8D3AB7F83527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D5102C0-1FAA-44BA-9C8D-8D3AB7F83527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC71CF9-3032-4407-ACE2-29C24E594D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC71CF9-3032-4407-ACE2-29C24E594D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC71CF9-3032-4407-ACE2-29C24E594D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC71CF9-3032-4407-ACE2-29C24E594D0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
